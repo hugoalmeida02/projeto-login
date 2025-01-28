@@ -6,18 +6,27 @@
     <title>Projeto Login</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/medias.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <main>
         <section>
             <div id="imagem">
             </div>
-            <div id="form">
+            <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça Login para acederes à tua conta.</p>
-                <form action="" method="post">
-                    <input type="text" name="nome" id="inome">
-                    <input type="password" name="pass" id="ipass">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="text" name="nome" id="inome" placeholder="Digite o seu Email" autocomplete="email">
+                        <label for="inome"><span class="material-icons">person</span></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">key</span>
+                        <input type="password" name="pass" id="ipass" placeholder="Digite a sua Password" autocomplete="current-password">
+                        <label for="ipass">Pass</label>
+                    </div>
                     <input type="submit" value="Login">
                 </form>
             </div>

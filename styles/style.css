@@ -41,9 +41,63 @@ div#imagem {
     height: 40%;
 }
 
-div#form {
+div#formulario {
     display: block;
     padding: 10px;
     height: 60%;
     background-color: white
+}
+
+div#formulario > h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div#formulario > p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+form > input[type=submit] {
+    display: block;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(201, 198, 198);
+}
+
+form > input[type=submit]:hover {
+    background-color: rgb(119, 118, 118);
+}
+
+form > div.campo {
+    background-color: #05C7F2;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px 0px;
+
+}
+
+form label {
+    display: none;
+    
+}
+
+div.campo > span {
+    transform: translate(10px, 6px);
+}
+
+div.campo > input {
+    
+    border-radius: 5px;
+    border: 1px solid #05C7F2;
+    height: 100%;
+    width: calc(100% - 48px);
+    transform: translate(20px)
 }

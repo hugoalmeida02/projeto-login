@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px){
-    
+
     section{
         width: 80vw;
+        height: 50vh;
     }
 
     div#imagem {
@@ -12,31 +13,48 @@
         float: left;
     }
 
-    div#form {
+    div#formulario {
         width: 60%;
         height: 100%;
         float: left;
     }
 
-
+    div#formulario > h1 {
+        margin: 20px;
+    }
+    
+    div#formulario > p {
+        margin: 20px;
+    }
+    
 }
 
 @media screen and (min-width: 992px){
 
     section{
         width: 900px;
+        height: 50vh;
     }
 
     div#imagem {
+        width: 40%;
+        height: 100%;
+        float: right;
+    }
+
+    div#formulario {
         width: 60%;
         height: 100%;
         float: right;
     }
 
-    div#form {
-        width: 40%;
-        height: 100%;
-        float: right;
+    div#formulario > h1 {
+        margin: 20px;
     }
+    
+    div#formulario > p {
+        margin: 20px;
+    }
+
 
 }
